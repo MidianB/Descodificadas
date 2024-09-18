@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Bem-Estar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Logo -->
+    <header>
+        <img src="logo.png" alt="Logo do Evento">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título destacado com imagem de fundo -->
+    <section class="banner">
+        <h1>Encontre seu Propósito de Vida</h1>
+    </section>
+
+    <!-- Texto com plano de fundo colorido -->
+    <section class="sobre" id="sobre">
+        <div class="content">
+            <p>Nosso evento foi projetado para ajudar você a descobrir seu Ikigai, seu propósito de vida, em um ambiente acolhedor e inspirador.</p>
+        </div>
+    </section>
+
+    <!-- Botão com link -->
+    <section class="inscricao">
+        <a href="#formulario" class="btn">Inscreva-se agora!</a>
+    </section>
+
+    <!-- Galeria de imagens -->
+    <section class="galeria" id="galeria">
+        <h2>Momentos Incríveis</h2>
+        <div class="grid">
+            <figure>
+                <img src="imagem1.jpg" alt="Descrição 1">
+                <figcaption>Descrição 1</figcaption>
+            </figure>
+            <figure>
+                <img src="imagem2.jpg" alt="Descrição 2">
+                <figcaption>Descrição 2</figcaption>
+            </figure>
+            <figure>
+                <img src="imagem3.jpg" alt="Descrição 3">
+                <figcaption>Descrição 3</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Vídeo -->
+    <section class="video">
+        <h2>Assista ao nosso vídeo de introdução</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/seu_video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Mapa de localização -->
+    <section id="localizacao">
+        <h2>Onde estamos</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=seu_mapa" width="600" height="450"></iframe>
+    </section>
+
+    <!-- Formulário de cadastro -->
+    <section id="formulario">
+        <h2>Cadastre-se para participar</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+ </body>
+</html>
